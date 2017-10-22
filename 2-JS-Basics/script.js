@@ -209,7 +209,7 @@ if( x === 5) {
 */
 
 // Lecture: Arrays
-
+/*
 var names = ['John', 'Jane', 'Mark'];
 var years = new Array(1990, 1969, 1948);
 
@@ -229,6 +229,49 @@ console.log(john);
 if(john.indexOf('teacher') === -1) {
 	console.log('John is NOT a teacher.');
 }
+*/
+
+// Lecture Objects
+
+var john = { 
+	name: 'John',
+	lastName: 'Smith',
+	yearOfBirth: 1990,
+	job: 'teacher',
+	isMarried: false
+};
+
+console.log(john.lastName);
+console.log(john['lastName']);
+
+var xyz = 'job';
+console.log(john[xyz]);
+
+john.lastName = 'Miller';
+john['job'] = 'programmer';
+
+console.log(john);
+
+var jane = new Object();
+
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
+
+console.log(jane);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
