@@ -334,6 +334,7 @@ for(i = names.length - 1; i >= 0; i--) {
 	console.log(names[i]);
 }
 */
+/*
 var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 
 var i = 0;
@@ -354,6 +355,52 @@ for(var i = 1; i <= 5; i++) {
 	if(i === 3) continue;
 	console.log(i);
 }
+*/
+
+
+// Coding Challenge
+
+var yearOfBirth = [1995, 1927, 1946, 2011];
+var emptyArray = [];
+
+for(var i = 0; i < yearOfBirth.length; i++) {
+	emptyArray.push(yearOfBirth[i]);
+}
+
+for(var i = 0; i < emptyArray.length; i++ ) {
+	var age = 2016 - emptyArray[i];
+	if( age >= 18 ) {
+		console.log('is of full age and is ' + age + ' years old.' );
+	} else console.log('is NOT of full age and is ' + age + ' years old.' );
+}
+
+function printFullAge(yearOfBirth) {
+
+	var results = [];
+	for(var i = 0; i < yearOfBirth.length; i++ ) {
+		var age = 2016 - yearOfBirth[i];
+		if( age >= 18 ) {
+			results.push(true);
+		} else results.push(false);
+	} 
+
+	return results;
+}
+console.log(yearOfBirth);
+console.log(printFullAge(yearOfBirth));
+
+var full_1 = printFullAge(yearOfBirth);
+var full_2 = printFullAge([1995, 2013, 1991]);
+
+console.log(full_2);
+
+
+
+
+
+
+
+
 
 
 
