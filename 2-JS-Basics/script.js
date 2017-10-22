@@ -137,7 +137,7 @@ switch(job) {
 		break;
 }
 */
-
+/*
 
 var john_height = 172;
 var friend_height = 165;
@@ -161,17 +161,30 @@ if(john_score - friend_score >  0 && john_score - third_friend_score >  0) {
 	console.log('Its a tie!');
 }
 
+*/
 
+// Lecture: Function
 
+function calulateAge(yearOfBirth) {
+	return 2016 - yearOfBirth;
+}
 
+var ageJohn = calulateAge(1990);
+var ageMike = calulateAge(1969);
+var ageMary = calulateAge(1948);
 
+function yearsUntilRetirement(name, yearOfBirth) {
+	var retirement = 65 - calulateAge(yearOfBirth);
+	if(retirement >= 0) {
+		console.log(name + ' retires in ' + retirement + ' years.' );
+	} else {
+		console.log(name + ' has already retired.');
+	}
+}
 
-
-
-
-
-
-
+yearsUntilRetirement('John', 1990);
+yearsUntilRetirement('Mike', 1969);
+yearsUntilRetirement('Mary', 1948);
 
 
 
