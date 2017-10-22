@@ -232,7 +232,7 @@ if(john.indexOf('teacher') === -1) {
 */
 
 // Lecture Objects
-
+/*
 var john = { 
 	name: 'John',
 	lastName: 'Smith',
@@ -261,16 +261,60 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
+*/
+
+// Lecture: Object and methods
+// v1.0
+/*
+var john = { 
+	name: 'John',
+	lastName: 'Smith',
+	yearOfBirth: 1990,
+	job: 'teacher',
+	isMarried: false,
+	family: ['Jane', 'Mark', 'Bob'],
+	calculateAge: function() {
+		return 2016 - this.yearOfBirth;
+	}
+};
+
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+*/
+
+//v2.0
+var john = { 
+	name: 'John',
+	lastName: 'Smith',
+	yearOfBirth: 1990,
+	job: 'teacher',
+	isMarried: false,
+	family: ['Jane', 'Mark', 'Bob'],
+	calculateAge: function() {
+		this.age = 2016 - this.yearOfBirth;
+	}
+};
+
+john.calculateAge();
+console.log(john);
 
 
 
 
 
+var mike = { 
+	yearOfBirth: 1950,
+	calculateAge: function() {
+		this.age = 2016 - this.yearOfBirth;
+	}
+};
 
-
-
-
-
+mike.calculateAge();
+console.log(mike);
 
 
 
