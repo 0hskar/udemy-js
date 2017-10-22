@@ -105,7 +105,7 @@ if( 23 === '23') {
 */
 
 // Lecture: Boolean Logic and switch
-
+/*
 var age = 20;
 
 if(age < 20) {
@@ -136,10 +136,30 @@ switch(job) {
 		console.log('John does something else.');
 		break;
 }
+*/
 
 
+var john_height = 172;
+var friend_height = 165;
+var third_friend_height = 2;
+var john_age = 26;
+var friend_age = 29;
+var third_friend_age = 1;
+
+var john_score = john_height + (5 * john_age);
+var friend_score = friend_height + (5 * friend_age);
+var third_friend_score = third_friend_height + (5 * third_friend_age);
 
 
+if(john_score - friend_score >  0 && john_score - third_friend_score >  0) {
+	console.log('John wins by ' + john_score + '!');
+} else if(john_score - friend_score <  0 && friend_score - third_friend_score > 0) {
+	console.log('Friend wins by ' + friend_score + '!');
+} else if(friend_score - third_friend_score <  0 && friend_score - third_friend_score < 0) {
+	console.log('Third friend wins by ' + third_friend_score + '!');
+} else {
+	console.log('Its a tie!');
+}
 
 
 
