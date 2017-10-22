@@ -164,7 +164,7 @@ if(john_score - friend_score >  0 && john_score - third_friend_score >  0) {
 */
 
 // Lecture: Function
-
+/*
 function calulateAge(yearOfBirth) {
 	return 2016 - yearOfBirth;
 }
@@ -185,6 +185,35 @@ function yearsUntilRetirement(name, yearOfBirth) {
 yearsUntilRetirement('John', 1990);
 yearsUntilRetirement('Mike', 1969);
 yearsUntilRetirement('Mary', 1948);
+*/
+
+// Lecture : Statements and expressions
+
+function someFun(par) {
+	//code
+}
+
+var someFun = function(par) {
+	//code
+}
+
+//Expressions
+4 + 3;
+var x = 3;
+
+// Statements
+
+if( x === 5) {
+	// do something
+}
+
+
+
+
+
+
+
+
 
 
 
